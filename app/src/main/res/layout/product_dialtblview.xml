@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/producttbltextview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="PRODUCT NAME"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/producttbltextview"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Purchase Rate Carton"
+                android:layout_marginLeft="10dp"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/crtnpurrate"
+                android:text="purchse rate pcs"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Purchase Rate Pieces"
+                android:layout_marginLeft="10dp"
+                android:padding="3dip" />
+            <TextView
+                android:text="purchse rate pcs"
+                android:id="@+id/pcspurrate"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

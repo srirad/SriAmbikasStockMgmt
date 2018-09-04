@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/logoimageView"
+        android:layout_width="96dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/ambikaslogo" />
+
+    <TextView
+        android:id="@+id/producttextview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logoimageView"
+
+        android:layout_marginTop="10dp"
+        android:capitalize="characters"
+        android:gravity="center_horizontal"
+
+        android:text="PRODUCT NAME"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/producttextview"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/purctnrate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/producttextview"
+        android:layout_marginLeft="10dp"
+
+
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="PURCHASE RATE (CTN)"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/purctnrate"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+
+    <TextView
+        android:id="@+id/purpcsrate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/purctnrate"
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="PURCHASE RATE (PCS)"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/purctnrateval"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/producttextview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_toRightOf="@+id/purctnrate"
+        android:gravity="center|left"
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/sellinratectn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/purpcsrate"
+        android:layout_marginLeft="10dp"
+
+
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="SELLING RATE (CTN)"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/purpcsrateval"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/purctnrateval"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="20dp"
+
+        android:layout_toRightOf="@+id/purpcsrate"
+        android:gravity="center|left"
+
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/purpcsrateval"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+
+    <TextView
+        android:id="@+id/minsellpricepcsval"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sellratepcsval"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/minsellpricepcs"
+
+        android:gravity="center|left"
+
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sellinratectnval"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/purpcsrateval"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+
+
+        android:layout_toRightOf="@+id/sellinratectn"
+        android:gravity="center|left"
+
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sellratepcs"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sellinratectn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="SELLING RATE (PCS)"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sellratepcsval"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sellinratectnval"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sellratepcs"
+        android:gravity="center|left"
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sellinratectnval"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sellratepcsval"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_green_dark"/>
+
+
+    <TextView
+        android:id="@+id/minsellpricepcs"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sellratepcs"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="M.SELLING RATE (PCS)"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
